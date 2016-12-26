@@ -1,0 +1,251 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	font-size: 16px; 
+	font-family: Helvetica; 
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+select  {
+	font-size: 18px;
+	padding: 5px 7px;
+	border: 2px solid #ccc;
+	width: 100%;
+	color: #777;
+	margin-bottom: 10px;
+}
+
+input[type="submit"].form-button {
+	border: none;
+    padding: 10px;
+    background: #819FF7;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper {
+	width: 75%;
+	min-height: 100%;
+	margin: 0 auto;
+}
+.hello-text { margin-top: 5%; }
+.hello-text > * {
+	color: white;
+	text-align: center;
+}
+
+h1 {
+    margin-bottom: 1%;
+	font-size: 32px;
+}
+
+.login-form p { 
+	font-size: 18px;
+}
+.login-form {
+	width: 450px;
+	padding: 20px;
+	color: white;
+}
+.submit-like-link {
+	width: 100%;
+	border: none;
+	color: white;
+	text-decoration: underline;
+	background: unset;
+	background-color: unset;
+	margin-bottom: 5px;
+}
+.cover{
+	margin: 5% auto;
+	width: 450px;
+    border: 2px solid #ccc;
+}
+
+@media (max-width: 800px) {
+	.wrapper { width: 85%; }
+	#keywords { font-size: 14px; }
+
+}
+
+@media (max-width: 600px) {
+	.wrapper { width: 90%; }
+	.login-form { width: 300px; }
+	.cover{ width: 300px; }
+}
+
+@media (max-width: 550px) {
+	.wrapper { width: 100%; }
+	* { font-size: 14px; }
+	#td-title tr td {
+		padding: 1px;
+	}
+	#keywords tbody tr td,
+	#keywords thead tr th  {
+  		padding: 1px;
+	}
+
+}
+
+@media (max-width: 350px) {
+	.wrapper { width: 100%; }
+	.cover { width: 100%; padding: 1%; }
+	.login-form { width: 100%; }
+}
+
+/**************HEADER*****************/
+.header {
+	padding: 20px 0;
+	background-color: #777;
+	color: white;
+}
+.header .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.right-align {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+@media (max-width: 800px) {
+	.header .wrapper { display: block; }
+
+	.header .wrapper .header-form { text-align: center; }
+
+	.right-align { margin-top: 2%; justify-content: center; }
+
+}
+
+/**************ЛОГО*****************/
+input[type="submit"].logo-link {
+    background: unset;
+    background-color: unset;
+    color: white;
+    border: none;
+    margin: 5px;
+    font-size: 24px;
+	font-weight: 600;
+}
+input[type="submit"].header-button {
+    color: white;
+    margin: 5px;
+    padding: 4px;
+    font-size: 14px;
+    background: unset;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+
+/**************CONTENT*****************/
+.wrapper.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.input-form-fullscreen {
+	width: 60%;
+	padding: 30px;
+	border: 2px solid #ccc;
+	margin-top: 2%;
+	background-color: white;
+}
+
+@media (max-width: 700px) {
+	.input-form-fullscreen {
+		width: 100%;
+	}
+}
+
+/**************FOOTER*****************/
+footer {
+	padding: 20px 0;
+	font-size: 14px;
+	background-color: #777;
+	color: #ddd;
+	margin-top: 50px;
+}
+
+
+/**************FOR ADMIN_MAIN_PAGE*****************/
+.admin-nav  {
+	display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+input[type="submit"].admin-button {
+	border: 2px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    background-color: unset;
+    color: #777;
+}
+
+@media (max-width: 920px) {
+	.admin-nav {
+		display: block;
+    	width: 70%;
+    	margin: 30px auto;
+	}
+
+	.admin-nav > * {
+	    margin: 1% auto;
+	}
+
+	input[type="submit"].admin-button {
+		width: 100%;
+	}
+    
+}
+
+
+
+
+
+
+
+
+table {
+	border: none;
+}
+
+#keywords {
+	width: 100%;
+	margin: 2% auto;
+  font-size: 1.2em;
+}
+
+#td-title tr td {
+	padding: 10px;
+}
+
+
+#keywords thead {
+  background: #c9dff0;
+}
+
+#keywords tbody tr { 
+  color: #555;
+}
+#keywords tbody tr td,
+#keywords thead tr th  {
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.tot_price {
+	font-size: 20px;
+}
+
+.tot_price span {
+	font-size: 24px;
+	font-weight: 600;
+}
